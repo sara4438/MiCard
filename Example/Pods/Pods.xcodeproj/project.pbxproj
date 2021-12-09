@@ -37,12 +37,12 @@
 		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
 		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
 		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
-		F9A1C15B2761FEA80040E95C /* MiCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A1C1582761FEA80040E95C /* MiCardView.swift */; };
-		F9A1C15C2761FEA80040E95C /* MiCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A1C1582761FEA80040E95C /* MiCardView.swift */; };
-		F9A1C15D2761FEA80040E95C /* MiCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A1C1592761FEA80040E95C /* MiCardView.xib */; };
-		F9A1C15E2761FEA80040E95C /* MiCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A1C1592761FEA80040E95C /* MiCardView.xib */; };
-		F9A1C15F2761FEA80040E95C /* UISate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A1C15A2761FEA80040E95C /* UISate.swift */; };
-		F9A1C1602761FEA80040E95C /* UISate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A1C15A2761FEA80040E95C /* UISate.swift */; };
+		F9A1C169276208320040E95C /* MiCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A1C166276208310040E95C /* MiCardView.xib */; };
+		F9A1C16A276208320040E95C /* MiCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9A1C166276208310040E95C /* MiCardView.xib */; };
+		F9A1C16B276208320040E95C /* UISate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A1C167276208310040E95C /* UISate.swift */; };
+		F9A1C16C276208320040E95C /* UISate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A1C167276208310040E95C /* UISate.swift */; };
+		F9A1C16D276208320040E95C /* MiCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A1C168276208310040E95C /* MiCardView.swift */; };
+		F9A1C16E276208320040E95C /* MiCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A1C168276208310040E95C /* MiCardView.swift */; };
 		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -129,10 +129,10 @@
 		DC442EDE46AE8C3853921B9CBBB73E34 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MiCard/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		E1170136AF3968CE58CBF3982DA3E00F /* MiCard.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MiCard.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F9A1C1582761FEA80040E95C /* MiCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MiCardView.swift; path = ../../miCardAnimation/miCardAnimation/MiCardView.swift; sourceTree = "<group>"; };
-		F9A1C1592761FEA80040E95C /* MiCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MiCardView.xib; path = ../../miCardAnimation/miCardAnimation/MiCardView.xib; sourceTree = "<group>"; };
-		F9A1C15A2761FEA80040E95C /* UISate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UISate.swift; path = ../../miCardAnimation/miCardAnimation/UISate.swift; sourceTree = "<group>"; };
 		F9A1C1642761FEDC0040E95C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9A1C166276208310040E95C /* MiCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiCardView.xib; sourceTree = "<group>"; };
+		F9A1C167276208310040E95C /* UISate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISate.swift; sourceTree = "<group>"; };
+		F9A1C168276208310040E95C /* MiCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiCardView.swift; sourceTree = "<group>"; };
 		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		FFB8F1C6F43C200A39D5C3032DAC7063 /* Pods-MiCard_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MiCard_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -353,9 +353,9 @@
 		F9A1C1572761FE970040E95C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F9A1C1582761FEA80040E95C /* MiCardView.swift */,
-				F9A1C1592761FEA80040E95C /* MiCardView.xib */,
-				F9A1C15A2761FEA80040E95C /* UISate.swift */,
+				F9A1C168276208310040E95C /* MiCardView.swift */,
+				F9A1C166276208310040E95C /* MiCardView.xib */,
+				F9A1C167276208310040E95C /* UISate.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -541,7 +541,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A1C15D2761FEA80040E95C /* MiCardView.xib in Resources */,
+				F9A1C169276208320040E95C /* MiCardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,7 +556,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A1C15E2761FEA80040E95C /* MiCardView.xib in Resources */,
+				F9A1C16A276208320040E95C /* MiCardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,9 +568,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F7FF6D35ED05B6256B58CCCBE28FDD1 /* MiCard-dummy.m in Sources */,
-				F9A1C15C2761FEA80040E95C /* MiCardView.swift in Sources */,
-				F9A1C1602761FEA80040E95C /* UISate.swift in Sources */,
 				5501EE257CFD46702E4645E32800081B /* ReplaceMe.swift in Sources */,
+				F9A1C16E276208320040E95C /* MiCardView.swift in Sources */,
+				F9A1C16C276208320040E95C /* UISate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,8 +594,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9A1C15F2761FEA80040E95C /* UISate.swift in Sources */,
-				F9A1C15B2761FEA80040E95C /* MiCardView.swift in Sources */,
+				F9A1C16B276208320040E95C /* UISate.swift in Sources */,
 				7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */,
 				5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */,
 				30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */,
@@ -605,6 +604,7 @@
 				B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */,
 				CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */,
 				2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */,
+				F9A1C16D276208320040E95C /* MiCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
