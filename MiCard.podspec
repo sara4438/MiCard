@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MiCard'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Flip cards.'
 
 # This description is used to generate tags and improve search results.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
-
+  s.swift_version = '4.1'
   s.homepage         = 'https://github.com/sara4438/MiCard'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
