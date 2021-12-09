@@ -1,0 +1,22 @@
+{
+  "name": "MiCard",
+  "version": "0.1.0",
+  "summary": "A short description of MiCard.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sara_yang/MiCard",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sara_yang": "sara54438@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/sara_yang/MiCard.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "MiCard/Classes/**/*"
+}

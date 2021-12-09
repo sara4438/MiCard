@@ -1,0 +1,6 @@
+framework module MiCard {
+  umbrella header "MiCard-umbrella.h"
+
+  export *
+  module * { export * }
+}
