@@ -313,6 +313,7 @@
 		F64A95ACAC87475B4252EF7613D2F616 /* Infallible+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F30C53EC4E6F7DA551559DEAC1D5C3 /* Infallible+Operators.swift */; };
 		F785BD49BD33D36AEAA9929EC496EF66 /* Just.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9A0A27CC4B0716ED1CBA590DC225B1 /* Just.swift */; };
 		F81F98EF8FB35A7488E4CF3D51B175B1 /* BehaviorRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FC3DBA1DF6B38E41FE74E5CAB03FA73 /* BehaviorRelay.swift */; };
+		F916B36D2762F60B00BF652B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F916B36C2762F60A00BF652B /* Assets.xcassets */; };
 		F9EE08CE2762EEB70078D256 /* MiCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EE08CB2762EEB70078D256 /* MiCardView.swift */; };
 		F9EE08CF2762EEB70078D256 /* MiCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9EE08CC2762EEB70078D256 /* MiCardView.xib */; };
 		F9EE08D02762EEB70078D256 /* UISate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EE08CD2762EEB70078D256 /* UISate.swift */; };
@@ -749,6 +750,7 @@
 		F7E839FF0D1BA5B5C0F1F0E0D4947ABC /* ObservableConvertibleType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableConvertibleType.swift; path = RxSwift/ObservableConvertibleType.swift; sourceTree = "<group>"; };
 		F8B6C5834B77B0E4380A1D21A3D9BFB8 /* Take.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Take.swift; path = RxSwift/Observables/Take.swift; sourceTree = "<group>"; };
 		F8FE8AF5E1705D95FAEB281E46B94C11 /* AsyncLock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncLock.swift; path = RxSwift/Concurrency/AsyncLock.swift; sourceTree = "<group>"; };
+		F916B36C2762F60A00BF652B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9EE08CB2762EEB70078D256 /* MiCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MiCardView.swift; path = Classes/MiCardView.swift; sourceTree = "<group>"; };
 		F9EE08CC2762EEB70078D256 /* MiCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MiCardView.xib; path = Classes/MiCardView.xib; sourceTree = "<group>"; };
 		F9EE08CD2762EEB70078D256 /* UISate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UISate.swift; path = Classes/UISate.swift; sourceTree = "<group>"; };
@@ -1088,6 +1090,7 @@
 		56F3EA317580E5350EA2BFCC4A10AF26 /* MiCard */ = {
 			isa = PBXGroup;
 			children = (
+				F916B36C2762F60A00BF652B /* Assets.xcassets */,
 				F9EE08CB2762EEB70078D256 /* MiCardView.swift */,
 				F9EE08CC2762EEB70078D256 /* MiCardView.xib */,
 				F9EE08CD2762EEB70078D256 /* UISate.swift */,
@@ -1652,6 +1655,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F916B36D2762F60B00BF652B /* Assets.xcassets in Resources */,
 				F9EE08CF2762EEB70078D256 /* MiCardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

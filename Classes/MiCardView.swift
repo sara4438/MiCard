@@ -11,7 +11,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class MiCardView: UIView {
+public class MiCardView: UIView {
     private var state : State = .vertical
     private var context = CIContext(options: nil)
     private var touchePoint: CGPoint?
@@ -115,7 +115,7 @@ class MiCardView: UIView {
  
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         bigPokerX = self.bigPoker.frame.origin.x
         bigPokerY = self.bigPoker.frame.origin.y
         bigPokerWidth = self.bigPoker.frame.size.width
@@ -234,9 +234,18 @@ class MiCardView: UIView {
         inputAngle = NSNumber(value: n )
         filter.setDefaults()
         filter.setValue(CIImage(image: inputImage), forKey: kCIInputImageKey)
-        let ciImg = CIImage(image: frontImage!)?.oriented(.downMirrored)
-        ciImg?.oriented(.downMirrored)
-        filter.setValue(ciImg!, forKey: "inputBacksideImage")
+        var ciImg : CIImage = CIImage()
+        if #available(iOS 11.0, *) {
+            ciImg = (CIImage(image: frontImage!)?.oriented(.downMirrored))!
+        } else {
+            // Fallback on earlier versions
+        }
+        if #available(iOS 11.0, *) {
+            ciImg.oriented(.downMirrored)
+        } else {
+            // Fallback on earlier versions
+        }
+        filter.setValue(ciImg, forKey: "inputBacksideImage")
         filter.setValue(inputTimeKey, forKey: kCIInputTimeKey)
         filter.setValue(inputAngle, forKey: kCIInputAngleKey)
         filter.setValue(15, forKey: kCIInputRadiusKey)
@@ -425,28 +434,36 @@ class MiCardView: UIView {
    private func changeToHorizontal() {
         if self.state == .vertical {
             self.state = .horizontal
-            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.5, delay: 0, animations: {
-                self.bigPoker.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 180 * 90)
-                self.finalPoker.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 180 * 90)
-                self.bigPoker.frame.origin.x = self.bigPokerX - 34
-                self.bigPoker.frame.origin.y = self.bigPokerY + 34
-                self.updateFinalPokerXY()
-                self.finalPoker.frame.origin.x = self.bigPoker.frame.origin.x
-                self.finalPoker.frame.origin.y = self.bigPoker.frame.origin.y
-                
-            }, completion: nil)
+            if #available(iOS 10.0, *) {
+                UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.5, delay: 0, animations: {
+                    self.bigPoker.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 180 * 90)
+                    self.finalPoker.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 180 * 90)
+                    self.bigPoker.frame.origin.x = self.bigPokerX - 34
+                    self.bigPoker.frame.origin.y = self.bigPokerY + 34
+                    self.updateFinalPokerXY()
+                    self.finalPoker.frame.origin.x = self.bigPoker.frame.origin.x
+                    self.finalPoker.frame.origin.y = self.bigPoker.frame.origin.y
+                    
+                }, completion: nil)
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
     
     func changeToVertical() {
         if self.state == .horizontal {
             self.state = .vertical
-            UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.5, delay: 0, animations: {
-                self.bigPoker.transform = CGAffineTransform(rotationAngle:  CGFloat.pi / 180 * 0 )
-                self.finalPoker.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 180 * 0)
-                
-                 self.updateFinalPokerXY()
-            }, completion: nil)
+            if #available(iOS 10.0, *) {
+                UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.5, delay: 0, animations: {
+                    self.bigPoker.transform = CGAffineTransform(rotationAngle:  CGFloat.pi / 180 * 0 )
+                    self.finalPoker.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 180 * 0)
+                    
+                    self.updateFinalPokerXY()
+                }, completion: nil)
+            } else {
+                // Fallback on earlier versions
+            }
         }
     }
     
