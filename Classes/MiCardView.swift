@@ -71,7 +71,7 @@ public class MiCardView: UIView {
     
     }
     
-    public func setOpenCorners(corners corners: [Corner]) {
+    public func setOpenCorners(from corners: [Corner]) {
         for (index ,corner) in self.cornerArr.enumerated() {
             if !corners.contains(corner) {
                 self.cornerArr[index] = .closeCorner
