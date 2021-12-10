@@ -71,7 +71,7 @@ public class MiCardView: UIView {
     
     }
     
-    public func setOpenCorners(corners corners: [Corner]) {
+    public func setOpenCorners(from corners: [Corner]) {
         for (index ,corner) in self.cornerArr.enumerated() {
             if !corners.contains(corner) {
                 self.cornerArr[index] = .closeCorner
@@ -115,7 +115,7 @@ public class MiCardView: UIView {
  
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         bigPokerX = self.bigPoker.frame.origin.x
         bigPokerY = self.bigPoker.frame.origin.y
         bigPokerWidth = self.bigPoker.frame.size.width
