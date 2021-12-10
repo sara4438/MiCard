@@ -11,7 +11,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class MiCardView: UIView {
+public class MiCardView: UIView {
     private var state : State = .vertical
     private var context = CIContext(options: nil)
     private var touchePoint: CGPoint?

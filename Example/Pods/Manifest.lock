@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - MiCard (1.0.2):
+  - MiCard (1.0.6):
     - RxCocoa
     - RxSwift
   - RxCocoa (6.2.0):
@@ -31,11 +31,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  MiCard: b56fe9c7c34d233e5fb62566143cf338a8f729d8
+  MiCard: 8033430d434cee40212eb0a564f89e747e2570a3
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
 
-PODFILE CHECKSUM: 8214eff4c2f871e127269df99cb2b535f4c5a316
+PODFILE CHECKSUM: f6c53d692c4e790444f5cc1ea6dfd5b49dc9198f
 
 COCOAPODS: 1.11.2
