@@ -43,7 +43,7 @@ public class MiCardView: UIView {
     public var fakeTouchPoint: BehaviorSubject<CGPoint> = BehaviorSubject<CGPoint>(value: CGPoint(x: 0, y: 0))
     var disposeBag: DisposeBag = DisposeBag()
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         loadXib()
     }

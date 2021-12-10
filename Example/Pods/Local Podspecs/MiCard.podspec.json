@@ -1,6 +1,6 @@
 {
   "name": "MiCard",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "summary": "Flip cards.",
   "description": "TODO: Add long description of the pod here.",
   "swift_versions": "4.1",
@@ -14,7 +14,7 @@
   },
   "source": {
     "git": "https://github.com/sara4438/MiCard.git",
-    "tag": "1.0.7"
+    "tag": "1.0.9"
   },
   "platforms": {
     "ios": "11.0"

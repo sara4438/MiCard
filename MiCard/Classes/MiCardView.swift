@@ -43,7 +43,7 @@ public class MiCardView: UIView {
     public var fakeTouchPoint: BehaviorSubject<CGPoint> = BehaviorSubject<CGPoint>(value: CGPoint(x: 0, y: 0))
     var disposeBag: DisposeBag = DisposeBag()
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         loadXib()
     }
@@ -64,6 +64,7 @@ public class MiCardView: UIView {
         UIState.instance.reset.skip(1).subscribe(onNext:{[weak self] reset in
             guard let self = self else { return }
             if reset {
+                print("xxxxx reset 2.5")
                 self.reset()
                 self.queue.clear()
             }
@@ -89,15 +90,20 @@ public class MiCardView: UIView {
     }
     
     public func resetCard() {
-        UIState.instance.reset.onNext(true)
+        self.reset()
+        self.queue.clear()
+//        UIState.instance.reset.onNext(true)
     }
     
     public func rotateToVertcal() {
-        UIState.instance.isVertical.onNext(true)
+//        UIState.instance.isVertical.onNext(true)
+        self.changeToVertical()
     }
     
     public func rotateToHorizontal() {
-        UIState.instance.isVertical.onNext(false)
+//        print("xxxxx  rotateToHorizontal ")
+//        UIState.instance.isVertical.onNext(false)
+        self.changeToHorizontal()
     }
     
     func loadXib(){
@@ -126,6 +132,7 @@ public class MiCardView: UIView {
     }
     
     public func updateFinalPokerXY() {
+        print("xxxx reset 3 ")
         self.midX = self.finalPoker.frame.midX
         self.midY = self.finalPoker.frame.midY
         self.minX = self.finalPoker.frame.minX
@@ -137,6 +144,7 @@ public class MiCardView: UIView {
     }
     
     func reset() {
+        print("xxxx reset 2 ")
         self.bigPoker.isHidden = false
         self.finalPoker.isHidden = true
         self.distanceX = 0
